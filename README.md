@@ -1,7 +1,7 @@
 # geolocator
 
 **geolocator** is a web app based on [Quarkus](https://quarkus.io/) and [Geo2IP Java API](https://github.com/maxmind/GeoIP2-java).
-By sending a request, you can receive geolocation information by providing a host address, e.g. an IP address.
+By sending a request, you can receive geolocation information (as JSON) by providing a host address (e.g. an IP address).
 
 The app requires a GeoLite2 database (a *.mmdb* file) that can be downloaded for free after signing up, 
 for more information please visit: https://dev.maxmind.com/geoip/geolite2-free-geolocation-data.
