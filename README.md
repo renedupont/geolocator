@@ -1,8 +1,8 @@
-# geolocator project
+# geolocator
 
 With **geolocator**, you can receive geolocation information by providing a host address, e.g. an IP address.
 
-The app uses the Geo2IP Java API (https://github.com/maxmind/GeoIP2-java) and requires a GeoLite2 
+The app uses the [Geo2IP Java API](https://github.com/maxmind/GeoIP2-java) and requires a GeoLite2 
 database (a *.mmdb* file) that can be downloaded for free after signing up, for more information 
 please visit: https://dev.maxmind.com/geoip/geolite2-free-geolocation-data.
 
