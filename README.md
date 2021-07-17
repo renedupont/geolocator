@@ -7,7 +7,7 @@ The app requires a GeoLite2 database (a *.mmdb* file) that can be downloaded for
 for more information please visit: https://dev.maxmind.com/geoip/geolite2-free-geolocation-data.
 
 The application expects an environment variable `GEOLITE2_DATABASE_PATH` that contains the absolute path to the *.mmdb* 
-file. For local development, you can create a `.env` file that sets this 
+file. For local development, you can create a `.env` file in the repo's root path that sets this 
 env var (e.g. `GEOLITE2_DATABASE_PATH=<path>/GeoLite2-City.mmdb`). The Quarkus framework will pick this up 
 automatically. 
 
