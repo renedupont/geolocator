@@ -10,7 +10,7 @@ import static org.hamcrest.CoreMatchers.is;
 public class GeolocatorResourceTest {
 
     @Test
-    public void testHelloEndpoint() {
+    public void testEndpoint_NotExistingInDb() {
         given()
           .when().get("/geolocation?host=127.0.0.1")
           .then()

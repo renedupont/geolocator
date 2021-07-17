@@ -1,17 +1,17 @@
 # geolocator
 
-With **geolocator**, you can receive geolocation information by providing a host address, e.g. an IP address.
+**geolocator** is a web app based on [Quarkus](https://quarkus.io/) and [Geo2IP Java API](https://github.com/maxmind/GeoIP2-java).
+By sending a request, you can receive geolocation information by providing a host address, e.g. an IP address.
 
-The app uses the [Geo2IP Java API](https://github.com/maxmind/GeoIP2-java) and requires a GeoLite2 
-database (a *.mmdb* file) that can be downloaded for free after signing up, for more information 
-please visit: https://dev.maxmind.com/geoip/geolite2-free-geolocation-data.
+The app requires a GeoLite2 database (a *.mmdb* file) that can be downloaded for free after signing up, 
+for more information please visit: https://dev.maxmind.com/geoip/geolite2-free-geolocation-data.
 
 The application expects an environment variable `GEOLITE2_DATABASE_PATH` that contains the absolute path to the *.mmdb* 
 file. For local development, you can create a `.env` file that sets this 
 env var (e.g. `GEOLITE2_DATABASE_PATH=<path>/GeoLite2-City.mmdb`). The Quarkus framework will pick this up 
 automatically. 
 
-While running the app, you can try it by locating an IP address like this:
+While running the app, you can send a request to get location information of an IP address like this:
 `http://localhost:8080/geolocation?host=<ip_address>`
 
 ### Hint
